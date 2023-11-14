@@ -1,5 +1,5 @@
 # CGDC
-The code of paper: Edge Matters: Center-Edge-Based Gaussianized Distribution Calibration for Few-Shot Images Classification
+The code of paper: 《Edge Matters: Center-Edge-Based Gaussianized Distribution Calibration for Few-Shot Images Classification》
 
 # Reference
 [Charting the Right Manifold: Manifold Mixup for Few-shot Learning](https://arxiv.org/pdf/1907.12087v3.pdf)<br>
