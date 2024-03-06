@@ -1,0 +1,22 @@
+{
+  "rng_seed": 0,
+  "n_tasks": 10000,
+  "source_dataset": "CUB",
+  "target_dataset": "CUB",
+  "backbone_arch": "WideResNet28_10",
+  "backbone_method": "S2M2_R",
+  "n_shots_list": [5],
+  "n_ways_list": [5],
+  "split_list": ["novel"],
+  "n_aug_list": [550],
+  "firth_coeff_list": [0.0],
+  "n_query": 15,
+  "dc_tukey_beta": 0.5,
+  "gamma": 1.1,
+  "dc_k": 6,
+  "dc_alpha": 0.01,
+  "lbfgs_iters": 100,
+  "store_results": true,
+  "dump_period": 10000,
+  "torch_threads": null
+}

@@ -1,0 +1,22 @@
+{
+  "rng_seed": 0,
+  "n_tasks": 10000,
+  "source_dataset": "CIFAR-FS",
+  "target_dataset": "CIFAR-FS",
+  "backbone_arch": "WideResNet28_10",
+  "backbone_method": "S2M2_R",
+  "n_shots_list": [1],
+  "n_ways_list": [5],
+  "split_list": ["val"],
+  "n_aug_list": [500],
+  "firth_coeff_list": [0.0],
+  "n_query": 15,
+  "dc_tukey_beta": 1.2,
+  "gamma": 0.8,
+  "dc_k": 6,
+  "dc_alpha": 0.06,
+  "lbfgs_iters": 100,
+  "store_results": true,
+  "dump_period": 10000,
+  "torch_threads": null
+}
