@@ -23,7 +23,7 @@ To evaluate our method, run: <br>
 ```
 python CGDC.py
 ```
-The code will conduct 5way1shot setting experiments on _mini_ ImageNet by default. You can change the experimental settings in configs/5ways and specify run 5way1shot experiments on CIFAR-FS like this:<br>
+The code will conduct 5way1shot setting experiments on _mini_ ImageNet by default. You can change the experimental settings in configs/5ways and specify experiments on any dataset in the following:<br>
 ```
 configid=[
   '5ways/CIFAR-FS_1s5w.json',
@@ -33,7 +33,28 @@ configid=[
   '5ways/CUB_1s5w.json',
   '5ways/CUB_5s5w.json'
 ]
+```
+To perform 5-way 1-shot classifications, run:
+```
+# For miniImagenet
+python CGDC.py --configid 5ways/miniImagenet_1s5w.json
+
+# For CIFAR-FS
 python CGDC.py --configid 5ways/CIFAR-FS_1s5w.json
+
+# For CUB
+python CGDC.py --configid 5ways/CUB_1s5w.json
+```
+To perform 5-way 5-shot classifications, run:
+```
+# For miniImagenet
+python CGDC.py --configid 5ways/miniImagenet_5s5w.json
+
+# For CIFAR-FS
+python CGDC.py --configid 5ways/CIFAR-FS_5s5w.json
+
+# For CUB
+python CGDC.py --configid 5ways/CUB_5s5w.json
 ```
 # Reference
 [Charting the Right Manifold: Manifold Mixup for Few-shot Learning](https://arxiv.org/pdf/1907.12087v3.pdf)<br>
