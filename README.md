@@ -14,7 +14,8 @@ Please follow [CUB](https://github.com/cyizhuo/CUB-200-2011-dataset) to obtain t
 ***
 After download all datasets, please run the make_josn.py in each dataset folder to generate json files which include filepath-label pairs of each image.
 # Pretraining
-You can directly download the extracted features from the link:
+You can directly download the extracted features from the link:<br>
+https://drive.google.com/file/d/1kvdfKsyS6Atr9-T8wOIYexSPrdM9-nuy/view?usp=drive_link
 ***
 After downloading the extracted features, put them in ./features/WideResNet28_10_S2M2_R/[dataset]/ respectively.
 # Evaluate our CGDC
@@ -24,9 +25,14 @@ python CGDC.py
 ```
 The code will conduct 5way1shot setting experiments on _mini_ ImageNet by default. You can change the experimental settings in configs/5ways and specify run 5way1shot experiments on CIFAR-FS like this:<br>
 ```
-configid=['5ways/CIFAR-FS_1s5w.json', '5ways/CIFAR-FS_5s5w.json',
-'5ways/miniImagenet_1s5w.json', '5ways/miniImagenet_5s5w.json',
-'5ways/CUB_1s5w.json', '5ways/CUB_5s5w.json']
+configid=[
+  '5ways/CIFAR-FS_1s5w.json',
+  '5ways/CIFAR-FS_5s5w.json',
+  '5ways/miniImagenet_1s5w.json',
+  '5ways/miniImagenet_5s5w.json',
+  '5ways/CUB_1s5w.json',
+  '5ways/CUB_5s5w.json'
+]
 python CGDC.py --configid 5ways/CIFAR-FS_1s5w.json
 ```
 # Reference
