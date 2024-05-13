@@ -13,7 +13,11 @@ Please follow [CIFAR-FS](https://github.com/mrkshllr/FewTURE/blob/main/datasets/
 Please follow [CUB](https://github.com/cyizhuo/CUB-200-2011-dataset) to obtain the CUB_200_2011 dataset and put it in ./filelists/CUB/.<br>
 ***
 After download all datasets, please run the make_josn.py in each dataset folder to generate json files which include filepath-label pairs of each image.
-# Pretraining
+
+# Training
+We use the same backbone network and training strategies as 'S2M2_R'. Please refer to [S2M2](https://github.com/nupurkmr9/S2M2_fewshot) for the backbone training. However, it should be noted that we have added Gaussian likelihood loss and need to place the train.py and Gaussian_loss.py files in appropriate folders
+
+# Extracted Features
 You can directly download the extracted features from the link:<br>
 https://drive.google.com/file/d/1kvdfKsyS6Atr9-T8wOIYexSPrdM9-nuy/view?usp=drive_link
 ***
